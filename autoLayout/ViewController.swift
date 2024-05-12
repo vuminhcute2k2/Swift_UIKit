@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         if(userNameTextField.text!.isEmpty || passwordTextField.text!.isEmpty){
             print("chưa nhập tài khoản hoặc mật khẩu?")
         }else{
-            print("đăng nhập thành công")
+            performSegue(withIdentifier: "goToHomeScreen", sender: self)
         }
     }
 }
